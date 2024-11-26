@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        h1 {
+            margin: 0;
+            color: #333;
+        }
+        .faq-section {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .faq-item h2 {
+            cursor: pointer;
+            margin: 0;
+            padding: 10px 0;
+            color: #007bff;
+        }
+        .faq-item p {
+            display: none;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FAQ</h1>
+    </header>
+    <section class="faq-section">
+        <div class="faq-item">
+            <h2>What is the refund policy?</h2>
+            <p>Our refund policy allows for refunds within 14 days of purchase. Please contact customer support for more details.</p>
+        </div>
+        <div class="faq-item">
+            <h2>How can I change my booking?</h2>
+            <p>To change your booking, please visit our booking management page or contact our support team.</p>
+        </div>
+        
+        <!-- New FAQ Section: Movie Classification -->
+        <div class="faq-item">
+            <h2>Phân loại phim P, K, T13, T16, T18 là gì?</h2>
+            <p>Căn cứ Luật Điện ảnh của Bộ trưởng Bộ Văn Hóa, Thể thao, Du lịch ngày 15/06/2022. CGV thông báo tiêu chí phân loại phim theo lứa tuổi, như sau:</p>
+            <ul>
+                <li><strong>P:</strong> Phim được phép phổ biến đến người xem ở mọi độ tuổi.</li>
+                <li><strong>K:</strong> Phim được phổ biến đến người xem dưới 13 tuổi và có người bảo hộ đi kèm.</li>
+                <li><strong>C13 (T13):</strong> Phim được phổ biến đến người xem từ đủ 13 tuổi trở lên (13+).</li>
+                <li><strong>C16 (T16):</strong> Phim được phổ biến đến người xem từ đủ 16 tuổi trở lên (16+).</li>
+                <li><strong>C18 (T18):</strong> Phim được phổ biến đến người xem từ đủ 18 tuổi trở lên (18+).</li>
+                <li><strong>C:</strong> Phim không được phép phổ biến.</li>
+            </ul>
+            <p>Khán giả khi xem phim thuộc các phân loại trên vui lòng mang theo giấy tờ tùy thân có ảnh hoặc hình ảnh của giấy tờ tùy thân có ảnh nhận diện và ngày tháng năm sinh để đảm bảo việc tuân thủ theo quy định.</p>
+            <ul>
+                <li><strong>C13 (T13):</strong> Giấy khai sinh, thẻ học sinh, thẻ bảo hiểm, thẻ thư viện, Hộ chiếu,… còn hiệu lực.</li>
+                <li><strong>C16 (T16):</strong> CCCD, Thẻ học sinh, Hộ chiếu, Thẻ thư viện,… còn hiệu lực.</li>
+                <li><strong>C18 (T18):</strong> CCCD, Thẻ học sinh sinh viên, Bằng lái xe, Hộ chiếu,… còn hiệu lực.</li>
+            </ul>
+            <p>Khách hàng vui lòng chứng thực được độ tuổi phù hợp với phim được phân loại như trên. CGV có quyền từ chối việc bán vé hoặc vào phòng chiếu nếu khách hàng không tuân thủ đúng theo quy định.</p>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to handle FAQ item toggling
+        document.querySelectorAll('.faq-item h2').forEach((item) => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
